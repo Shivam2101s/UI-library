@@ -1,9 +1,9 @@
 import React from 'react';
-import './Button.css';
-interface ButtonProps {
+import s from './Button.module.scss';
+export interface ButtonProps {
     label:string;
 }
  const Button = (props:ButtonProps) => {
-    return <button>{props.label}</button>
+    return <button className={s.root}>{props.label}</button>
 }
 export default Button;
