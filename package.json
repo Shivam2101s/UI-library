@@ -1,6 +1,6 @@
 {
   "name": "@Shivam2101s/ui-library",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Parkplus UI library",
   "scripts": {
     "rollup": "rollup -c",
@@ -26,6 +26,7 @@
     "@types/react": "^17.0.34",
     "babel-loader": "^8.3.0",
     "css-loader": "^6.7.3",
+    "node-sass": "^8.0.0",
     "postcss": "^8.4.20",
     "postcss-loader": "^7.0.2",
     "react": "^18.2.0",
