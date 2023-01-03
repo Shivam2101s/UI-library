@@ -1,0 +1,260 @@
+@import 'src/config/theme/fonts';
+
+.h1 {
+  font-size: 32px;
+  line-height: 44px;
+  font-family: $gilroy-bold-font;
+}
+
+.h2 {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $gilroy-bold-font;
+}
+
+.h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: $gilroy-bold-font;
+}
+.h4 {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $gilroy-semi-bold-font;
+}
+
+.h2_light {
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $gilroy-medium-font;
+}
+
+.h3_light {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: $gilroy-medium-font;
+}
+
+.base_big_bold {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $gilroy-bold-font;
+}
+
+.base_big_sb {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $gilroy-semi-bold-font;
+}
+
+.base_big_m {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $gilroy-medium-font;
+}
+
+.body_big_b {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $gilroy-bold-font;
+}
+
+.body_big_bold {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $gilroy-bold-font;
+}
+
+.body_big_sb {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $gilroy-semi-bold-font;
+}
+
+.body_big_m {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $gilroy-medium-font;
+}
+
+.body_m {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $gilroy-medium-font;
+}
+
+.body_b {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $gilroy-bold-font;
+}
+
+.body_sb {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $gilroy-semi-bold-font;
+}
+
+.body_ul {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $gilroy-medium-font;
+  text-decoration: underline;
+}
+
+.body_st {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $gilroy-medium-font;
+  text-decoration: line-through;
+}
+
+.body_para_m {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $gilroy-medium-font;
+}
+
+.body_para_sb {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $gilroy-semi-bold-font;
+}
+
+.body_para_b {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $gilroy-bold-font;
+}
+
+.body_para_ul {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $gilroy-medium-font;
+}
+
+.body_para_ul {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $gilroy-medium-font;
+  text-decoration: underline;
+}
+
+.body_para_st {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $gilroy-medium-font;
+  text-decoration: line-through;
+}
+
+.small_m {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $gilroy-medium-font;
+}
+
+.small_sb {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $gilroy-semi-bold-font;
+}
+
+.small_b {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $gilroy-bold-font;
+}
+
+.small_ul {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $gilroy-medium-font;
+  text-decoration: underline;
+}
+
+.small_st {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $gilroy-medium-font;
+  text-decoration: line-through;
+}
+
+.small_uppercase {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $gilroy-medium-font;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.small_para_m {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: $gilroy-medium-font;
+}
+
+.small_para_sb {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: $gilroy-semi-bold-font;
+}
+
+.small_para_b {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: $gilroy-bold-font;
+}
+
+.small_para_ul {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: $gilroy-medium-font;
+  text-decoration: underline;
+}
+
+.small_para_st {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: $gilroy-medium-font;
+  text-decoration: line-through;
+}
+
+.tiny_m {
+  font-size: 10px;
+  line-height: 14px;
+  font-family: $gilroy-medium-font;
+}
+
+.tiny_sb {
+  font-size: 10px;
+  line-height: 14px;
+  font-family: $gilroy-semi-bold-font;
+}
+
+.tiny_b {
+  font-size: 10px;
+  line-height: 14px;
+  font-family: $gilroy-bold-font;
+}
+
+.tiny_ul {
+  font-size: 10px;
+  line-height: 14px;
+  font-family: $gilroy-medium-font;
+  text-decoration: underline;
+}
+
+.tiny_st {
+  font-size: 10px;
+  line-height: 14px;
+  font-family: $gilroy-medium-font;
+  text-decoration: line-through;
+}
+
+.tiny_uppercase {
+  font-size: 10px;
+  line-height: 14px;
+  font-family: $gilroy-medium-font;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,60 @@
+// COLORS
+$theme-yellow: #2b79ff;
+$theme-blue: #2b79ff;
+$theme-black: #232c33;
+$theme-dark-grey: #444444;
+$theme-light-grey: #f7f7f7;
+$theme-mid-grey: #9b9b9b;
+$red-color: #cc001b;
+$green-color: #00ad47;
+$yellow-color: #ffd52a;
+$dark-yellow-color: #f07d00;
+$light-yellow-color: #ffcf9a;
+$white-color: #ffffff;
+$black-color: #111111;
+$grey-color: rgb(140, 140, 141);
+$cyan-color: #0facfd;
+$light-red-color: #ffe6e9;
+$mid-red-color: #ff9a9a;
+$light-blue-color: rgba(43, 121, 255, 0.08);
+$dark-green-color: #026d46;
+$light-green-color: #91ffa9;
+$orange-color: #fd6e21;
+$purple-color: #8c70ff;
+$whatsapp-color: #2ec4b6;
+$pink-color: #ff2a9c;
+$light-pink-color: rgba(255, 41, 156, 0.2);
+$teal-color: #2ec4b6;
+$dark-blue-color: #1e4384;
+$off-white: #f7f7f7;
+
+$grey-shade-1: #f0f0f1;
+$grey-shade-2: #ababb2;
+$grey-shade-3: #787879;
+$grey-shade-4: #444444;
+
+// SCREEN SIZES BREAK POINTS
+$desktop: 1200px;
+$tablet: 991px;
+$phone: 767px;
+$small-phone: 550px;
+
+// FONT FACES
+$circular-book-font: GilroyMedium, sans-serif;
+$circular-medium-font: GilroySemiBold, sans-serif;
+$circular-bold-font: GilroyBold, sans-serif;
+
+$colors-list: (
+  blue: $theme-yellow,
+  red: $red-color,
+  cyan: $cyan-color,
+  lightred: $light-red-color,
+  midred: $mid-red-color,
+  green: $green-color,
+  white: $white-color,
+  darkgreen: $dark-green-color,
+  lightgreen: $light-green-color,
+  midgrey: $theme-mid-grey,
+  yellow: $yellow-color,
+  darkyellow: $dark-yellow-color,
+);

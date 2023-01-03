@@ -1,0 +1,59 @@
+@import 'src/config/theme/fonts.scss';
+@import 'src/styles/colors';
+
+.root {
+  background-color: $grey-white;
+  padding: 16px 8px;
+  margin: 0 16px;
+  border-radius: 12px;
+  .top {
+    display: flex;
+    align-items: center;
+    .left {
+      margin-right: 4px;
+      img {
+        height: 32px;
+        width: 32px;
+        object-fit: contain;
+      }
+    }
+    .center {
+      display: flex;
+      flex-direction: column;
+      & > h3 {
+        margin-bottom: 2px;
+      }
+      & > h4 {
+        color: #494e59 !important;
+      }
+    }
+    .right {
+      margin-left: auto;
+      width: fit-content;
+      .btn {
+        padding: 6px 5px 5px 5px;
+      }
+    }
+  }
+}
+.critical {
+  background-color: #ffebeb;
+  h3 {
+    color: $negative-text !important;
+  }
+  h4 {
+    color: $text-default !important;
+  }
+}
+.warning {
+  background-color: $warning-20;
+  h3 {
+    color: $warning-text !important;
+  }
+  h4 {
+    color: $text-default !important;
+  }
+  button {
+    background-color: $grey-white;
+  }
+}

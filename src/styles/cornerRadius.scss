@@ -1,0 +1,15 @@
+@mixin cornerSharp {
+  border-radius: 0;
+}
+
+@mixin cornerS {
+  border-radius: 4px;
+}
+
+@mixin cornerBase {
+  border-radius: 8px;
+}
+
+@mixin cornerL {
+  border-radius: 12px;
+}

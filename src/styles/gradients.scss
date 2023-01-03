@@ -1,0 +1,150 @@
+@mixin gradientLightMango {
+  background: linear-gradient(52.19deg, #fff1eb 0%, #f7f5ca 98.95%);
+}
+
+@mixin gradientLightSun {
+  background: linear-gradient(52.19deg, #fff1eb 0%, #f7f5ca 98.95%);
+}
+
+@mixin gradientLightLeaf {
+  background: linear-gradient(
+    90.38deg,
+    #f6f9db 0.04%,
+    #f6f9db 0.05%,
+    #d9f9e8 99.39%
+  );
+}
+
+@mixin gradientLightTrust {
+  background: linear-gradient(
+    53.61deg,
+    #d9f9ef 0%,
+    #d9f9ef 0.01%,
+    #d6e0fc 99.94%
+  );
+}
+
+@mixin gradientLightHolo {
+  background: linear-gradient(128.49deg, #e5f4ff 0%, #f9e9ff 100%);
+}
+
+@mixin gradientLightSunrise {
+  background: linear-gradient(128.49deg, #f0d7fa 0%, #fbe6e6 100%);
+}
+
+@mixin gradientLightMorph {
+  background: linear-gradient(130.41deg, #f9e7fe 2.14%, #dafcfc 101.31%);
+}
+
+@mixin gradientLightEmerald {
+  background: linear-gradient(231.51deg, #e6fff7 0%, #e4ffe0 100%);
+}
+
+@mixin gradientPastelPlum {
+  background: linear-gradient(52.19deg, #ffc2c2 0%, #ffd7a8 98.95%);
+}
+
+@mixin gradientPastelDesert {
+  background: linear-gradient(0deg, #ffd8c2 0%, #f8eba6 100%);
+}
+
+@mixin gradientPastelLeaf {
+  background: linear-gradient(51.51deg, #9aeabf 0%, #eaf6a3 100%);
+}
+
+@mixin gradientPastelOcean {
+  background: linear-gradient(308.49deg, #a0bef8 0%, #b5f0f0 100%);
+}
+
+@mixin gradientPastelSunset {
+  background: linear-gradient(128.49deg, #9ec5ff 0%, #e1a6f8 100%);
+}
+
+@mixin gradientPastelDusk {
+  background: linear-gradient(179.75deg, #e1adfa 0.46%, #fcb4b4 99.71%);
+}
+
+@mixin gradientPastelMorph {
+  background: linear-gradient(129.28deg, #ddabf4 0%, #93d7f4 101.28%);
+}
+
+@mixin gradientPastelEmerald {
+  background: linear-gradient(129.28deg, #ddabf4 0%, #93d7f4 101.28%);
+}
+
+@mixin gradientPlum {
+  background: linear-gradient(51.6deg, #ff4444 -1.19%, #ffeac0 101.68%);
+}
+
+@mixin gradientGlacier {
+  background: linear-gradient(231.49deg, #dbf4ff 0%, #2f5cff 100.03%);
+}
+
+@mixin gradientSilk {
+  background: linear-gradient(
+    51.6deg,
+    #5236ff -1.19%,
+    #5236ff -1.18%,
+    #d9edff 101.68%
+  );
+}
+
+@mixin gradientSoftPink {
+  background: linear-gradient(50.49deg, #eb4174 -1.67%, #ffe3e3 100%);
+}
+
+@mixin gradientSoftVoilet {
+  background: linear-gradient(232.42deg, #cce0ff 1.36%, #8a2eff 99.95%);
+}
+
+@mixin gradientIce {
+  background: linear-gradient(232.42deg, #cce0ff 1.36%, #8a2eff 99.95%);
+}
+
+@mixin gradientDeepOrange {
+  background: linear-gradient(308.49deg, #cb2c2c 0%, #ff9432 100%);
+}
+
+@mixin gradientSunrise {
+  background: linear-gradient(360deg, #d55c05 0%, #fabf26 100%);
+}
+
+@mixin gradientLeaf {
+  background: linear-gradient(128.49deg, #b0ff4b 0%, #11876b 100%);
+}
+
+@mixin gradientOcean {
+  background: linear-gradient(
+    180deg,
+    #37cfff 0%,
+    #0d57c6 100.07%,
+    #0f5ed6 100.07%
+  );
+}
+
+@mixin gradientSunset {
+  background: linear-gradient(
+    51.49deg,
+    #3c00c2 12.81%,
+    #62bdff 100.08%,
+    #62bdff 100.08%
+  );
+}
+
+@mixin gradientPinkSky {
+  background: linear-gradient(309.29deg, #9c1ebc -1.31%, #ff7676 100%);
+}
+
+@mixin gradientLuxury {
+  background: linear-gradient(128.49deg, #cb5dff 0%, #1d41be 100%);
+}
+
+@mixin gradientEmerald {
+  background: linear-gradient(180deg, #9dffb3 0%, #1aa37a 100%);
+}
+
+@mixin clipText {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
