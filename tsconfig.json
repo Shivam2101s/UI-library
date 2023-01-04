@@ -31,12 +31,11 @@
     // "baseUrl": ".",
     // "incremental": true
   },
-  // "include": [
-  //   "next-env.d.ts",
-  //   "custom.d.ts",
-  //   "scss.d.ts",
-  //   "**/*.ts",
-  //   "**/*.tsx"
-  // ],
-  // "exclude": ["node_modules"]
+  "include": [
+    "custom.d.ts",
+    "scss.d.ts",
+    "**/*.ts",
+    "**/*.tsx","src"
+  ],
+  "exclude": ["node_modules", "dist", "example", "rollup.config.js"]
 }

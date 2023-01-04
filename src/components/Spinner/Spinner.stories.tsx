@@ -2,7 +2,7 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Spinner from '.';
+import {Spinner} from './Spinner';
 
 export default {
   title: 'Atoms/Spinner',

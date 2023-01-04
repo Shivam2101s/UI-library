@@ -1,5 +1,5 @@
 /* eslint-disable react/require-default-props */
-import React from 'react';
+import React,{useMemo} from 'react';
 import cn from 'classnames';
 import s from './Spinner.module.scss';
 
@@ -12,7 +12,7 @@ export function Spinner({
   size?: 'xxxs' | 'xxs' | 'xs' | 's' | 'm' | 'l';
   variant?: VariantType;
 }) {
-  const color = React.useMemo(() => {
+  const color = useMemo(() => {
     if (variant === 'dark') return '#000';
     if (variant === 'light') return '#fff';
     if (variant === 'blue') return '#0012ff69';
