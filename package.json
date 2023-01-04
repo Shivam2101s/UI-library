@@ -1,6 +1,6 @@
 {
   "name": "@Shivam2101s/ui-library",
-  "version": "1.0.4",
+  "version": "1.0.10",
   "description": "Parkplus UI library",
   "scripts": {
     "rollup": "rollup -c",

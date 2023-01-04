@@ -2,10 +2,10 @@
 import React from 'react';
 import cn from 'classnames';
 import { ButtonSizes, ButtonVariants } from '../../primitives/ButtonTypes';
+import ChevronRight from '../icons/ChevronRight';
 import Button from '../Button';
 import s from './Alert.module.scss';
 import Typography from '../Typography';
-import ChevronRight from '../icons/ChevronRight';
 
 type AlertType = {
   heading: string;
