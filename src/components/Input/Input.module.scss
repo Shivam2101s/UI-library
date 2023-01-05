@@ -1,0 +1,263 @@
+@import 'src/styles/colors';
+@import 'src/config/theme/fonts';
+@import 'src/styles/cornerRadius';
+@import 'src/styles/shadows';
+
+.root {
+  width: 100%;
+  position: relative;
+
+  fieldset {
+    @include cornerL;
+    border: 1px solid $grey-stroke-divider;
+    height: 60px;
+    position: relative;
+  }
+
+  fieldset:hover {
+    @include cornerL;
+    border: 1px solid rgba(6, 114, 247, 0.453);
+    transition: border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+  }
+
+  legend {
+    margin-left: 12px;
+    padding: 0 4px;
+  }
+
+  .text_area_fieldset {
+    width: 100%;
+    height: 116px;
+  }
+
+  ::placeholder {
+    color: $text-placeholder;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: $text-placeholder;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: $text-placeholder;
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $text-placeholder;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: $text-placeholder;
+  }
+
+  .text_area {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    top: -9px;
+    padding: 6px 16px 2px;
+
+    &.without_label_textarea {
+      height: 110px !important;
+      top: 0 !important;
+    }
+
+    textarea {
+      @include cornerL;
+      display: block;
+      caret-color: $interaction-30;
+      color: $text-default;
+      font-family: $gilroy-medium-font;
+      font-size: 16px;
+      line-height: 24px;
+      width: 100%;
+      height: 100%;
+
+      resize: none;
+      background-color: transparent;
+
+      ::placeholder {
+        color: $text-placeholder;
+      }
+
+      ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: $text-placeholder;
+      }
+
+      ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $text-placeholder;
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $text-placeholder;
+      }
+
+      :-moz-placeholder {
+        /* Firefox 18- */
+        color: $text-placeholder;
+      }
+    }
+  }
+
+  .input {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -9px;
+    height: 48px;
+    width: 100%;
+
+    & > :focus::placeholder {
+      color: transparent;
+    }
+
+    label {
+      padding: 0 4px;
+      position: absolute;
+      left: 16px;
+    }
+
+    input {
+      @include cornerL;
+      padding: 0 16px;
+      display: block;
+      outline: none;
+      caret-color: $interaction-30;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      color: $text-default;
+      font-family: $gilroy-medium-font;
+      font-size: 16px;
+      line-height: 24px;
+      background-color: transparent;
+
+      ::placeholder {
+        color: $text-placeholder;
+      }
+
+      ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: $text-placeholder;
+      }
+
+      ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: $text-placeholder;
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $text-placeholder;
+      }
+
+      :-moz-placeholder {
+        /* Firefox 18- */
+        color: $text-placeholder;
+      }
+
+      :focus {
+        border: none !important;
+      }
+    }
+
+    // hides caleendar/arrow icon in input
+    input[type='date'] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Change the autocomplete background color to any color */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      transition: background-color 600000s 0s, color 600000s 0s;
+    }
+
+    .left_icon {
+      width: 24px;
+      height: 24px;
+      margin-left: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .left_icon + input {
+      padding-left: 15px;
+    }
+
+    .with_right_icon {
+      padding-right: 42px;
+    }
+
+    .right_icon {
+      width: 24px;
+      height: 24px;
+      margin-left: auto;
+      margin-right: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:focus-within {
+      border-color: $interaction-40;
+    }
+  }
+
+  .error_msg {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .with_shadow {
+    @include shadowHigh;
+  }
+
+  .without_label {
+    height: 50px;
+    top: -1px !important;
+  }
+
+  .onFocus {
+    border: 1px solid rgba(6, 114, 247, 0.453);
+    transition: border-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+  }
+
+  .has_error {
+    border-color: $negative-60 !important;
+  }
+
+  .disabled {
+    pointer-events: none;
+    border-color: $grey-30 !important;
+    background: $grey-10 !important;
+  }
+
+  .disabled_label {
+    background: rgb(247, 247, 247);
+    background: linear-gradient(
+      0deg,
+      rgba(247, 247, 247, 1) 0%,
+      rgba(247, 247, 247, 1) 62%,
+      rgba(255, 255, 255, 1) 55%
+    );
+  }
+}

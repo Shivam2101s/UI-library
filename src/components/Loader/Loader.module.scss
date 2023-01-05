@@ -1,0 +1,19 @@
+.main {
+  height: 90vh;
+  width: 100vw;
+  padding: 0px 16px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  .loader {
+    width: 135px;
+    height: 135px;
+    text-align: center;
+  }
+  .title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

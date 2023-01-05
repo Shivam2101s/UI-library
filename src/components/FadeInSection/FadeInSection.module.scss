@@ -1,0 +1,21 @@
+.is_visible {
+  animation: moveUp 0.9s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(10vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
