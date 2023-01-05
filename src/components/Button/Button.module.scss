@@ -1,9 +1,293 @@
-.root {
-    color: red;
-    font-size: 22px;
-    border: 1px solid  red;
-    border-radius: 12px;
-    padding:2px 10px ;
-    background: transparent;
+@import 'src/config/theme/fonts';
+@import 'src/styles/colors';
 
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 0 11px;
+  transition: all 0.2s ease-in-out;
+  width: fit-content;
+
+  &:hover {
+    transform: scale(0.98);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  .leftIcon {
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rightIcon {
+    margin-left: 4px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.isRound {
+  border-radius: 50% !important;
+  height: 39px !important;
+  .leftIcon {
+    margin-right: 0px;
+  }
+  .rightIcon {
+    margin-left: 0px;
+  }
+}
+.Big {
+  height: 48px;
+}
+
+.Small {
+  height: 32px;
+}
+
+// primary
+.Primary {
+  color: $grey-white;
+  background-color: $interaction-buttons;
+
+  &:active {
+    background-color: $interaction-80;
+  }
+  &:disabled {
+    color: $grey-40;
+    background-color: $grey-20;
+    border-bottom-color: transparent;
+  }
+}
+.PrimaryOutline {
+  color: $interaction-buttons;
+  border-color: $grey-20;
+
+  &:active {
+    color: $interaction-80;
+    background-color: $grey-10;
+  }
+  &:disabled {
+    color: $grey-40;
+    background-color: $grey-20;
+    border-bottom-color: transparent;
+  }
+}
+.PrimaryNaked {
+  color: $interaction-buttons;
+
+  &:active {
+    color: $interaction-80;
+    background-color: $grey-10;
+  }
+  &:disabled {
+    color: $grey-40;
+  }
+}
+.PrimaryLink {
+  border-radius: 0;
+  color: $interaction-buttons;
+  border-bottom-color: $interaction-buttons;
+  border-bottom-style: dashed;
+  padding: 0 0;
+  height: 24px;
+  &:active {
+    color: $interaction-80;
+    border-bottom-color: $interaction-80;
+    background-color: $grey-10;
+    border-bottom-style: solid;
+  }
+  &:disabled {
+    color: $grey-40;
+    border-bottom-color: transparent;
+  }
+}
+
+// success
+.Success {
+  color: $grey-white;
+  background-color: $positive-60;
+
+  &:active {
+    background-color: $positive-80;
+  }
+  &:disabled {
+    color: $grey-40;
+    background-color: $grey-20;
+    border-color: transparent;
+  }
+}
+.SuccessOutline {
+  color: $positive-60;
+  border-color: $grey-60;
+
+  &:active {
+    color: $positive-80;
+    background-color: $grey-10;
+  }
+  &:disabled {
+    color: $grey-40;
+    background-color: $grey-20;
+    border-color: transparent;
+  }
+}
+.SuccessNaked {
+  color: $positive-60;
+
+  &:active {
+    color: $positive-80;
+  }
+  &:disabled {
+    color: $grey-40;
+  }
+}
+.SuccessLink {
+  border-radius: 0;
+  color: $positive-60;
+  border-bottom-color: $positive-60;
+  border-bottom-style: dashed;
+  padding: 0 0;
+  height: 24px;
+
+  &:active {
+    color: $positive-80;
+    background-color: $grey-10;
+    border-bottom-style: solid;
+  }
+  &:disabled {
+    color: $grey-40;
+    border-bottom-color: transparent;
+  }
+}
+
+// danger
+.Danger {
+  color: $grey-white;
+  background-color: $negative-60;
+
+  &:active {
+    background-color: $negative-text;
+  }
+  &:disabled {
+    color: $grey-40;
+    background-color: $grey-20;
+    border-color: transparent;
+  }
+}
+.DangerOutline {
+  color: $negative-60;
+  border-color: $negative-60;
+
+  &:active {
+    color: $negative-text;
+    background-color: $grey-10;
+  }
+  &:disabled {
+    color: $grey-40;
+    background-color: $grey-20;
+    border-color: transparent;
+  }
+}
+.DangerNaked {
+  color: $negative-60;
+
+  &:active {
+    color: $negative-text;
+    background-color: $grey-10;
+  }
+  &:disabled {
+    color: $grey-40;
+  }
+}
+.DangerLink {
+  border-radius: 0;
+  color: $negative-60;
+  border-bottom-color: $negative-60;
+  border-bottom-style: dashed;
+  padding: 0 0;
+  height: 24px;
+
+  &:active {
+    color: $negative-text;
+    background-color: $grey-10;
+    border-bottom-style: solid;
+  }
+  &:disabled {
+    color: $grey-40;
+    border-bottom-color: transparent;
+  }
+}
+
+// black
+.Black {
+  color: $grey-white;
+  background-color: $text-default;
+  &:disabled {
+    color: $grey-40;
+    background-color: $grey-20;
+    border-color: transparent;
+  }
+}
+.BlackOutline {
+  color: $text-default;
+  border-color: $grey-20;
+
+  &:active {
+    background-color: $grey-10;
+  }
+  &:disabled {
+    color: $grey-40;
+    background-color: $grey-20;
+    border-color: transparent;
+  }
+}
+.BlackNaked {
+  color: $text-default;
+
+  &:active {
+    background-color: $grey-10;
+  }
+  &:disabled {
+    color: $grey-40;
+  }
+}
+.BlackLink {
+  border-radius: 0;
+  color: $text-default;
+  border-bottom-color: $text-default;
+  border-bottom-style: dashed;
+  padding: 0 0;
+  height: 24px;
+
+  &:active {
+    background-color: $grey-10;
+    border-bottom-style: solid;
+  }
+  &:disabled {
+    color: $grey-40;
+    border-bottom-color: transparent;
+  }
+}
+
+.OctagonalFilled {
+//   background-image: url('/img/mg/octagon-black-filled.svg');
+
+  &.disabled_btn {
+    opacity: 0.4;
+  }
+
+  & > .label {
+    color: white;
+  }
 }

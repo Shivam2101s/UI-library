@@ -1,0 +1,34 @@
+@keyframes spin {
+  from {
+    transform: rotate(-360deg);
+  }
+}
+
+.loader {
+  width: 32px;
+  animation: spin 1.2s linear infinite;
+}
+
+.xxxs {
+  width: 14px;
+}
+
+.xxs {
+  width: 18px;
+}
+
+.xs {
+  width: 22px;
+}
+
+.s {
+  width: 28px;
+}
+
+.m {
+  width: 32px;
+}
+
+.l {
+  width: 36px;
+}

@@ -1,6 +1,9 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import  Button  from "./Button";
+/* eslint-disable react/jsx-props-no-spreading */
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Button } from './Button';
+import ChevronRight from '../icons/ChevronRight';
+import ChevronLeft from '../icons/ChevronLeft';
 
 export default {
   title: 'Atoms/Button',
@@ -12,12 +15,25 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const HelloWorld = Template.bind({});
-HelloWorld.args = {
-  label: "Hello world!",
+export const Primary = Template.bind({});
+
+export const PrimaryWithLeftIcon = Template.bind({});
+PrimaryWithLeftIcon.args = {
+  leftIcon: <ChevronLeft primaryColor="grey_white" />,
 };
 
-export const ClickMe = Template.bind({});
-ClickMe.args = {
-  label: "Click me!",
+export const PrimaryWithRightIcon = Template.bind({});
+PrimaryWithRightIcon.args = {
+  rightIcon: <ChevronRight primaryColor="grey_white" />,
+};
+
+export const PrimaryDisabled = Template.bind({});
+PrimaryDisabled.args = {
+  isDisabled: true,
+};
+
+export const PrimaryLoading = Template.bind({});
+PrimaryLoading.args = {
+  isDisabled: true,
+  isLoading: true,
 };
