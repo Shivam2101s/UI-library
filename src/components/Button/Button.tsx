@@ -7,7 +7,6 @@ import {
   ButtonVariants,
   ButtonVariantsType,
   ColorType,
-  FontVariantType,
 } from '../../primitives';
 import { ButtonSizes } from '../../primitives/ButtonTypes';
 import Spinner from '../Spinner';

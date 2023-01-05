@@ -1,0 +1,47 @@
+@import 'src/config/theme/fonts';
+@import 'src/styles/colors';
+
+.root {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & > .link_item {
+    color: $grey-40;
+    display: flex;
+    align-items: center;
+    svg {
+      margin: 0 5px;
+      fill: $grey-black;
+      stroke: $grey-black;
+      path {
+        fill: $grey-black;
+        stroke: $grey-black;
+      }
+    }
+    &:hover {
+      svg {
+        fill: $interaction-60;
+        stroke: $interaction-60;
+        path {
+          fill: $interaction-60;
+          stroke: $interaction-60;
+        }
+      }
+    }
+    a {
+      color: $grey-black;
+      font-size: 12px;
+      line-height: 16px;
+      font-family: $gilroy-medium-font;
+      text-transform: capitalize;
+      &:hover {
+        color: $interaction-60;
+      }
+    }
+  }
+}

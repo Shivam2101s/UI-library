@@ -1,0 +1,90 @@
+@import 'src/config/theme/fonts';
+@import 'src/styles/colors';
+
+.badge {
+  padding: 5px 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 4px;
+}
+
+.Success {
+  color: $grey-white;
+  background-color: $positive-text;
+}
+
+.SuccessOutline {
+  color: $positive-60;
+  background-color: $positive-10;
+}
+
+.SuccessNaked {
+  color: $positive-60;
+}
+
+.Warning {
+  color: $warning-10;
+  background-color: $warning-50;
+}
+
+.WarningOutline {
+  color: $warning-text;
+  background-color: $warning-10;
+}
+
+.WarningNaked {
+  color: $warning-text;
+}
+
+.Error {
+  color: $negative-10;
+  background-color: $negative-text;
+}
+
+.ErrorOutline {
+  color: $negative-60;
+  background-color: $negative-10;
+}
+
+.ErrorNaked {
+  color: $negative-60;
+}
+
+.Black {
+  color: $grey-white;
+  background-color: $grey-80;
+}
+
+.BlackOutline {
+  color: $grey-80;
+  background-color: $grey-10;
+}
+
+.BlackNaked {
+  color: $grey-80;
+}
+
+.Blue {
+  color: $grey-white;
+  background-color: $blue-80;
+}
+
+.BlueOutline {
+  color: $blue-70;
+  background-color: $blue-10;
+}
+
+.BlueNaked {
+  color: $blue-70;
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+.margin {
+  margin-right: 4px;
+}

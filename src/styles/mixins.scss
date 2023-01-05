@@ -1,0 +1,222 @@
+@import '../config/config';
+
+@mixin box-shadow {
+  box-shadow: 0 0 10px 0 #00000025;
+}
+
+@mixin box-shadow-mid-spread {
+  box-shadow: 0 0 10px 0 #00000015;
+}
+
+@mixin box-shadow-wide-spread {
+  box-shadow: 0 0 10px 0 #00000008;
+}
+
+@mixin fix-flex($width, $height) {
+  height: $height;
+  flex-basis: $width;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+@mixin flex-without-resize() {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+@mixin linear-gradient-vertical($color1, $color2) {
+  background: $color1;
+  background: linear-gradient(0deg, $color1 0%, $color2 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startcolorstr=$color1,endcolorstr=$color2,gradienttype=1);
+}
+
+@mixin single-line-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin multi-line-ellipsis($line) {
+  display: box;
+  overflow: hidden;
+  max-width: 200px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}
+
+@mixin shimmer-effect {
+  position: relative;
+  display: inline-block;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeholderShimmer;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 20%,
+    #f6f7f8 40%,
+    #f6f7f8 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 300px;
+}
+
+@mixin horizontal-scroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+//@each $key, $val in $colors-list {
+//  :global {
+//    .global_color_#{$key} {
+//      color: $val;
+//    }
+//    .global_bg_color_#{$key} {
+//      background-color: $val;
+//    }
+//  }
+//}
+
+@keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@mixin fade-in-animation($sec) {
+  animation: fade-in $sec;
+  opacity: 1;
+}
+
+@keyframes right-to-left-page {
+  from {
+    position: fixed;
+    right: -300px;
+    width: 105%;
+    opacity: 0.8;
+  }
+
+  to {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@mixin right-to-left-page-animation($sec) {
+  animation: right-to-left-page $sec;
+  opacity: 1;
+}
+
+@keyframes bottom-to-top-page {
+  0% {
+    position: fixed;
+    top: 500px;
+    opacity: 0.8;
+  }
+
+  100% {
+    position: fixed;
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@mixin bottom-to-top-page-animation($sec) {
+  animation: bottom-to-top-page $sec;
+  opacity: 1;
+}
+
+@keyframes top-to-bottom-page {
+  0% {
+    position: fixed;
+    top: 0;
+    opacity: 1;
+  }
+
+  100% {
+    position: fixed;
+    top: 500px;
+    opacity: 0;
+  }
+}
+
+@mixin top-to-bottom-page-animation($sec) {
+  animation: top-to-bottom-page $sec;
+  opacity: 1;
+}
+
+@keyframes scale-small-to-big {
+  0% {
+    position: fixed;
+    opacity: 0.8;
+    scale: (0.1, 0.1);
+  }
+
+  100% {
+    position: fixed;
+    opacity: 1;
+    scale: (1, 1);
+  }
+}
+
+@mixin scale-small-to-big-animation($sec) {
+  animation: bottom-to-top-page $sec;
+  opacity: 1;
+}
+
+@keyframes overlay-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@mixin popup-animation() {
+  animation: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0s 1 overlay-animation;
+}
+
+@keyframes center-popup {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+
+  90% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@mixin center-popup-animation($sec) {
+  animation: $sec ease-out 0s 1 center-popup;
+  opacity: 1;
+}
