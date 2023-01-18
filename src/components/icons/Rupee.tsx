@@ -1,6 +1,6 @@
 import React from 'react';
 import { Color, ColorsPallete } from '../../primitives';
-import { IconTypes } from '../../primitives';
+import { IconTypes } from '../../primitives/IconTypes';
 
 function Rupee({
   primaryColor = Color.grey_80,

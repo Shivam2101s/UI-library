@@ -1,6 +1,6 @@
 {
   "name": "@shivam3101s/ui-library",
-  "version": "1.0.20",
+  "version": "1.0.22",
   "description": "Parkplus UI library",
   "scripts": {
     "rollup": "rollup -c",
@@ -57,7 +57,6 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
-    "classnames": "^2.3.2",
-    "copy-to-clipboard": "^3.3.3"
+    "classnames": "^2.3.2"
   }
 }
