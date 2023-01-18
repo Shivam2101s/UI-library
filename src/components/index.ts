@@ -28,5 +28,3 @@ export {default as Spinner} from './Spinner';
 export {default as Stepper} from './Stepper';
 export {default as Switch} from './Switch/Switch';
 export {default as TabBar} from './TabBar';
-
-export * from './icons/All/All'
