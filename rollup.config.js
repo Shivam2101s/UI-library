@@ -4,7 +4,6 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from 'rollup-plugin-postcss';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
-import { babel } from "@rollup/plugin-babel";
 
 
 const packageJson = require("./package.json");
@@ -23,7 +22,6 @@ export default [
         file: packageJson.module,
         format: "esm",
         sourcemap: true,
-        preserveModules: true,
       },
     ],
     plugins: [
@@ -32,12 +30,6 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss(),
-      babel({
-        babelHelpers: "runtime",
-        exclude: /node_modules/,
-        extensions: [".js", ".ts", ".tsx"],
-      }),
-  
     ],
   },
   {
