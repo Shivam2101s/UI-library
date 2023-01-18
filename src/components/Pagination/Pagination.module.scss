@@ -1,0 +1,23 @@
+@import 'src/config/theme/fonts.scss';
+@import 'src/styles/colors';
+
+.root {
+  min-width: 117px;
+  height: 32px !important;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  & > .text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  button {
+    height: 24px;
+  }
+}
+.light {
+  background-color: $grey-white;
+  border: 1px solid #e6eaf4;
+}

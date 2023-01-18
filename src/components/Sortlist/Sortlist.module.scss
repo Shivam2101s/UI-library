@@ -1,0 +1,53 @@
+@import 'src/styles/colors';
+
+.sort_options {
+  display: flex;
+  border-top: 1px solid $grey-10;
+  width: 100%;
+
+  .sort_display {
+    padding: 16px 12px 16px 16px;
+    border-right: 1px solid $grey-10;
+    // width: 130px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 8px rgba(15, 15, 15, 0.06);
+    border-radius: 0px 4px 4px 0px;
+  }
+
+  .sort_labels::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sort_labels {
+    margin: 8px 0;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+
+    .label_item {
+      border: 1px solid $grey-stroke-divider;
+      padding: 8px;
+      border-radius: 8px;
+      margin-right: 8px;
+      flex-shrink: 0;
+      height: 35px;
+    }
+
+    .active_label {
+      display: flex;
+      align-items: center;
+      background-color: $interaction-10;
+      border: 1px solid $interaction-buttons;
+      box-sizing: border-box;
+
+      .cross_icon {
+        margin-left: 4px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}

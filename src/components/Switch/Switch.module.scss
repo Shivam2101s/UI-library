@@ -1,0 +1,97 @@
+@import 'src/styles/colors.scss';
+@import 'src/styles/cornerRadius.scss';
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 32px;
+  padding: 4px;
+  input {
+    display: none;
+  }
+  input:checked + .slider {
+    background-color: $interaction-60;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(16px);
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $grey-20;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: '';
+    width: 24px;
+    height: 24px;
+    left: 4px;
+    bottom: 4px;
+    background: $grey-white;
+    transition: 0.4s;
+  }
+  .yesNo {
+    overflow: hidden;
+    border: 1px solid $grey-stroke-divider;
+    width: 80px;
+    @include cornerL;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      width: 50%;
+      height: 100%;
+    }
+    p:first-of-type {
+      padding: 6px 0 6px 12px;
+      text-align: left;
+      transition: all 0.5s ease-in;
+    }
+    p:last-of-type {
+      text-align: right;
+      padding: 6px 12px 6px 0;
+      transition: all 0.5s ease-in;
+    }
+  }
+  .isActive {
+    p:first-of-type {
+      color: $text-caption !important;
+    }
+    p:last-of-type {
+      background-color: $interaction-60;
+    }
+  }
+  .isInActive {
+    p:first-of-type {
+      background-color: $interaction-60;
+    }
+    p:last-of-type {
+      color: $text-caption !important;
+    }
+  }
+  .isDisabled {
+    background-color: $grey-20;
+    p {
+      color: $grey-50 !important;
+    }
+    p:first-of-type {
+      border-right: 1px solid $grey-stroke-divider;
+    }
+  }
+}
+
+.slider.round {
+  border-radius: 16px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
