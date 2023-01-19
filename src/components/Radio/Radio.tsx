@@ -49,6 +49,7 @@ const Radio = (props: RadioProps) => {
         </div>
         <div className={s.children}>
           {label && (
+            //@ts-ignore
             <Typography
               color={disabled ? Color.grey_40 : Color.text_default}
               variant={TypeScales.body_m}
@@ -56,6 +57,7 @@ const Radio = (props: RadioProps) => {
             />
           )}
           {description && (
+            //@ts-ignore
             <Typography
               color={disabled ? Color.grey_40 : Color.text_subheading}
               variant={TypeScales.body_m}

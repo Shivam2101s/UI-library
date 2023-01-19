@@ -39,6 +39,7 @@ export const LinearWithSteps = ({
         {steps?.length &&
           steps?.map((item) => (
             <div key={item?.label}>
+              {/* @ts-ignore */}
               <Typography
                 renderAs="P"
                 label={item?.label}

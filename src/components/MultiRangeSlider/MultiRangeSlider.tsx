@@ -104,6 +104,7 @@ export function MultiRangeSlider({
         step={step}
         ref={minRef}
         onChange={(event: ChangeEvent<HTMLInputElement>) => {
+          {/* @ts-ignore */}
           const value = Math.min(+event.target.value, +max - +step);
           setMin(value);
           event.target.value = value.toString();
@@ -122,6 +123,7 @@ export function MultiRangeSlider({
         step={step}
         ref={maxRef}
         onChange={(event: ChangeEvent<HTMLInputElement>) => {
+          {/* @ts-ignore */}
           const value = Math.max(+event.target.value, +min + +step);
           setMax(value);
           event.target.value = value.toString();
@@ -144,6 +146,7 @@ export function MultiRangeSlider({
             }
           >
             {minMaxVisible && ( //for minMax visible
+            //@ts-ignore
               <Typography
                 label={handleLabel(min)}
                 variant="body_para_b"
@@ -166,6 +169,7 @@ export function MultiRangeSlider({
             }
           >
             {minMaxVisible && ( //for minMax visible
+            //@ts-ignore
               <Typography
                 label={handleLabel(max)}
                 variant="body_para_b"
@@ -189,6 +193,7 @@ export function MultiRangeSlider({
         </div>
         <div className={s.static_value}>
           <div className={s.left_value}>
+            {/* @ts-ignore */}
             <Typography
               label={handleLabel(start)}
               variant="body_para_m"
@@ -198,6 +203,7 @@ export function MultiRangeSlider({
             />
           </div>
           <div className={s.right_value}>
+            {/* @ts-ignore */}
             <Typography
               label={handleLabel(stop)}
               variant="body_para_m"

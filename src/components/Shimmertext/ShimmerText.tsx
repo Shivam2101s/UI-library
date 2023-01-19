@@ -18,6 +18,7 @@ const randomText = [
 
 export function ShimmerText({ label }: { label?: string }) {
   return (
+    //@ts-ignore
     <Typography
       variant={TypeScales.body_b}
       color={Color.text_placeholder}

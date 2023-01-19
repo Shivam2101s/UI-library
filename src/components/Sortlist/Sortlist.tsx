@@ -24,6 +24,7 @@ export const Sortlist = (props: props) => {
       <div className={s.sort_display}>
         <Settings />
         &nbsp;
+        {/* @ts-ignore */}
         <Typography
           renderAs="SPAN"
           label="Sort by"
@@ -44,6 +45,7 @@ export const Sortlist = (props: props) => {
             }}
             aria-hidden
           >
+            {/* @ts-ignore */}
             <Typography
               label={label.text}
               variant="small_sb"

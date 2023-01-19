@@ -25,14 +25,15 @@ export const FadeInSection = ({ children }: { children: any }) => {
       threshold: buildThresholdList(1000),
     };
 
-    function handleIntersect(entries:any) {
-      entries.forEach((entry:any) => {
+    function handleIntersect(entries: any) {
+      entries.forEach((entry: any) => {
         setVisible(entry.isIntersecting);
         entry.target.style.opacity = entry.intersectionRatio;
       });
     }
 
     const observer = new IntersectionObserver(handleIntersect, options);
+    // @ts-ignore
     observer.observe(domRef.current);
   }, []);
 
@@ -41,6 +42,7 @@ export const FadeInSection = ({ children }: { children: any }) => {
       className={cn(s.root, {
         [s.is_visible]: isVisible,
       })}
+      // @ts-ignore
       ref={domRef}
     >
       {children}

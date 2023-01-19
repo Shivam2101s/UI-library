@@ -11,7 +11,7 @@ import s from './Faq.module.scss';
 export const Faq = ({ heading = "FAQ's", faqs, isOpen = true }: FaqType) => {
   const [faqOpen, setFaqOpen] = useState(isOpen);
   const [activeFaqId, setActiveFaqId] = useState(-1);
-  function handleActiveFaq(id:any) {
+  function handleActiveFaq(id: any) {
     if (activeFaqId === id) {
       setActiveFaqId(-1);
     } else setActiveFaqId(id);
@@ -19,6 +19,7 @@ export const Faq = ({ heading = "FAQ's", faqs, isOpen = true }: FaqType) => {
   return (
     <div className={s.root}>
       <div className={s.top} onClick={() => setFaqOpen((state) => !state)}>
+        {/* @ts-ignore */}
         <Typography
           renderAs="H3"
           variant="h3"
@@ -45,6 +46,7 @@ export const Faq = ({ heading = "FAQ's", faqs, isOpen = true }: FaqType) => {
                   })}
                   onClick={() => handleActiveFaq(idx)}
                 >
+                        {/* @ts-ignore */}
                   <Typography
                     renderAs="P"
                     variant="body_sb"

@@ -79,6 +79,7 @@ const Input = (props: InputProps) => {
           {label && (
             <legend>
               <label className={classNames({ [s.disabled_label]: disabled })}>
+                {/* @ts-ignore */}
                 <Typography
                   label={label}
                   variant={TypeScales.body_para_sb}
@@ -121,6 +122,7 @@ const Input = (props: InputProps) => {
           {label && (
             <legend>
               <label className={classNames({ [s.disabled_label]: disabled })}>
+                {/* @ts-ignore */}
                 <Typography
                   label={label}
                   variant={TypeScales.body_para_sb}
@@ -157,6 +159,7 @@ const Input = (props: InputProps) => {
             width={16}
             primaryColor="negative_60"
           />
+          {/* @ts-ignore */}
           <Typography
             style={{ marginLeft: '4px' }}
             label={errorMessage}

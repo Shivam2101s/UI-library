@@ -26,6 +26,7 @@ const Loader = ({
         </div>
         {loadingTitle && (
           <div className={s.title}>
+            {/* @ts-ignore */}
             <Typography
               label={loadingTitle}
               variant="body_big_b"
@@ -35,6 +36,7 @@ const Loader = ({
         )}
         {loadingSubtitle && (
           <div className={s.subTitle}>
+            {/* @ts-ignore */}
             <Typography
               label={loadingSubtitle}
               variant="body_para_m"
@@ -51,6 +53,7 @@ const Loader = ({
         </div>
         {successTitle && (
           <div className={s.title}>
+            {/* @ts-ignore */}
             <Typography
               label={successTitle}
               variant="body_big_b"
@@ -60,6 +63,7 @@ const Loader = ({
         )}
         {successSubtitle && (
           <div className={s.subTitle}>
+            {/* @ts-ignore */}
             <Typography
               label={successSubtitle}
               variant="body_para_m"

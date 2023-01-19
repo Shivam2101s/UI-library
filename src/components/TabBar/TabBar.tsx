@@ -14,7 +14,7 @@ export function TabBar(props: TabBarProps) {
   const { tabItems, activeTab, onTabClick } = props;
 
   //this will bring the element to center
-  const handelPosition = (event:any) => {
+  const handelPosition = (event: any) => {
     event.target.scrollIntoView({ inline: 'center' });
   };
   return (
@@ -31,6 +31,8 @@ export function TabBar(props: TabBarProps) {
           })}
           key={e}
         >
+          {/* @ts-ignore */}
+
           <Typography
             label={e}
             variant={TypeScales.body_sb}

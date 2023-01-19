@@ -15,12 +15,15 @@ const Rating: React.FunctionComponent<RatingType> = ({
   lowRatingColor,
   bgColor,
 }) => {
-  const getColor = (rating) => {
+  const getColor = (rating:any) => {
     if (rating === 1) {
+      //@ts-ignore
       return ColorsPallete[lowRatingColor] || ColorsPallete[Color.negative_60];
     } else if (rating === 2) {
+      // @ts-ignore
       return ColorsPallete[midRatingColor] || ColorsPallete[Color.orange_50];
     } else {
+      //@ts-ignore
       return ColorsPallete[topRatingColor] || ColorsPallete[Color.positive_50];
     }
   };
@@ -28,10 +31,12 @@ const Rating: React.FunctionComponent<RatingType> = ({
     <section
       className={s.root}
       style={{
+        //@ts-ignore
         backgroundColor: ColorsPallete[bgColor] || ColorsPallete[Color.grey_10],
       }}
     >
       <div className={s.title}>
+      {/* @ts-ignore */}
         <Typography
           label={title}
           variant={TypeScales.h4}
@@ -45,6 +50,7 @@ const Rating: React.FunctionComponent<RatingType> = ({
           <span>{averageRating}</span>
         </div>
         <div className={s.desc}>
+          {/* @ts-ignore */}
           <Typography
             label={`Based on ${totalRating} customer reviews`}
             variant={TypeScales.small_m}

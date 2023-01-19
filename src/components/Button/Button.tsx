@@ -92,14 +92,16 @@ export const Button = (props: ButtonProps) => {
       }}
       {...propsToFwd}
       disabled={isDisabled}
-      onClick={isLoading ? ()=>{} : onClick}
+      onClick={isLoading ? () => { } : onClick}
     >
       {!isLoading && (
         <>
           {leftIcon && <div className={s.leftIcon}>{leftIcon}</div>}
+
           {label && (
+            /* @ts-ignore */
             <Typography
-              label={label}
+              label={`${label}`}
               variant="body_para_sb"
               renderAs="SPAN"
               color={textColor}

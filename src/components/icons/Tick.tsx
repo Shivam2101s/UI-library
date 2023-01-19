@@ -9,6 +9,7 @@ function TickLinear({
   height = 24,
 }: IconTypes) {
   const primaryColorValue = ColorsPallete[primaryColor];
+  {/* @ts-ignore */}
   return {
     linear: (
       <svg

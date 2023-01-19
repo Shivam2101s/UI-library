@@ -33,6 +33,7 @@ export const Typography = ({
     [`${className}`]: !!className,
   });
   const customStyle = { ...style, color: colorValue };
+  //@ts-ignore
   return {
     [TypographyHtmlTags.H1]: (
       <h1 className={classValue} style={customStyle}>

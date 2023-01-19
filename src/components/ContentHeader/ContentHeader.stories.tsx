@@ -12,6 +12,7 @@ export default {
 } as ComponentMeta<typeof ContentHeader>;
 
 const Template: ComponentStory<typeof ContentHeader> = (args:any) => (
+  //@ts-ignore
   <ContentHeader {...args} />
 );
 

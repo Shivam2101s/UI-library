@@ -3,7 +3,7 @@ import { Color, ColorsPallete } from '../../primitives';
 import Typography from '../Typography';
 import s from './Snackbar.module.scss';
 
-interface SnackbarTypes {
+export interface SnackbarTypes {
   variant:
     | 'positivePriority'
     | 'criticalPriority'
@@ -16,6 +16,7 @@ interface SnackbarTypes {
   leftIcon?: any;
   rightIcon?: any;
   label: string;
+  onRefreshClick?: ()=>void; 
 }
 
 function Snackbar({ leftIcon, rightIcon, label, variant }: SnackbarTypes) {
@@ -28,6 +29,7 @@ function Snackbar({ leftIcon, rightIcon, label, variant }: SnackbarTypes) {
       >
         <div className={s.leftIcon}>{leftIcon}</div>
         <div>
+          {/* @ts-ignore */}
           <Typography
             variant="body_para_m"
             color={Color.grey_white}
@@ -44,6 +46,7 @@ function Snackbar({ leftIcon, rightIcon, label, variant }: SnackbarTypes) {
       >
         <div className={s.leftIcon}>{leftIcon}</div>
         <div>
+          {/* @ts-ignore */}
           <Typography
             variant="body_para_m"
             color={Color.grey_white}
@@ -60,6 +63,7 @@ function Snackbar({ leftIcon, rightIcon, label, variant }: SnackbarTypes) {
       >
         <div className={s.leftIcon}>{leftIcon}</div>
         <div>
+          {/* @ts-ignore */}
           <Typography
             variant="body_para_m"
             color={Color.grey_black}
@@ -76,6 +80,7 @@ function Snackbar({ leftIcon, rightIcon, label, variant }: SnackbarTypes) {
       >
         <div className={s.leftIcon}>{leftIcon}</div>
         <div>
+          {/* @ts-ignore */}
           <Typography
             variant="body_para_m"
             color={Color.grey_white}
@@ -92,6 +97,7 @@ function Snackbar({ leftIcon, rightIcon, label, variant }: SnackbarTypes) {
       >
         <div className={s.leftIcon}>{leftIcon}</div>
         <div>
+          {/* @ts-ignore */}
           <Typography
             variant="body_para_m"
             color={Color.positive_text}
@@ -108,6 +114,7 @@ function Snackbar({ leftIcon, rightIcon, label, variant }: SnackbarTypes) {
       >
         <div className={s.leftIcon}>{leftIcon}</div>
         <div>
+          {/* @ts-ignore */}
           <Typography
             variant="body_para_m"
             color={Color.negative_80}
@@ -124,6 +131,7 @@ function Snackbar({ leftIcon, rightIcon, label, variant }: SnackbarTypes) {
       >
         <div className={s.leftIcon}>{leftIcon}</div>
         <div>
+          {/* @ts-ignore */}
           <Typography
             variant="body_para_m"
             color={Color.warning_70}
@@ -140,6 +148,7 @@ function Snackbar({ leftIcon, rightIcon, label, variant }: SnackbarTypes) {
       >
         <div className={s.leftIcon}>{leftIcon}</div>
         <div>
+          {/* @ts-ignore */}
           <Typography
             variant="body_para_m"
             color={Color.grey_black}

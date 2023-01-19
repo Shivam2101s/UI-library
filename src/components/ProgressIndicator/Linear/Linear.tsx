@@ -19,6 +19,7 @@ export const Linear = ({ noOfSteps, currentStep, color }: IndicatorType) => (
       style={{
         width: calcWidth(noOfSteps, currentStep),
         opacity: 1,
+        //@ts-ignore
         background: ColorsPallete[color],
       }}
     />

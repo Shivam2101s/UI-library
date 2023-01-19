@@ -29,7 +29,7 @@ export function RangeSlider({
 
   const [marginRight, setMarginRight] = React.useState('-32px');
 
-  function updateStyle(sliderVal) {
+  function updateStyle(sliderVal:any) {
     if (sliderRef && sliderRef.current) {
       // @ts-ignore
       sliderRef.current.style.width = `${
@@ -59,7 +59,7 @@ export function RangeSlider({
     }
   }
 
-  const changeCallback = (e) => {
+  const changeCallback = (e:any) => {
     setSliderVal(e.target.value);
     onChange(Number(e.target.value));
     updateStyle(e.target.value);
@@ -72,6 +72,7 @@ export function RangeSlider({
   return (
     <div className={s.container}>
       <div className={s.minLabelText}>
+        {/* @ts-ignore */}
         <Typography variant="body_para_m" color="text_label" label={minLabel} />
       </div>
       <div className={s.root}>
@@ -85,6 +86,7 @@ export function RangeSlider({
           step={step}
         />
         <div
+        //@ts-ignore 
           ref={sliderRef}
           style={{
             background: `${
@@ -96,6 +98,7 @@ export function RangeSlider({
           className={s.filled}
         >
           <span className={s.thumbText} style={{ right: `${marginRight}` }}>
+            {/* @ts-ignore */}
             <Typography
               variant="body_para_b"
               label={`${value}`}
@@ -109,6 +112,7 @@ export function RangeSlider({
         </div>
       </div>
       <div className={s.maxLabelText}>
+        {/*@ts-ignore */}
         <Typography variant="body_para_m" color="text_label" label={maxLabel} />
       </div>
     </div>

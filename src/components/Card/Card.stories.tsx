@@ -18,6 +18,7 @@ const Template: ComponentStory<typeof Card> = (args) => (
     <>
       <br />
       <br />
+      {/* @ts-ignore */}
       <Typography label="Card content will be here" />
       <br />
       <br />

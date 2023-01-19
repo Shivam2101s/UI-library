@@ -2,7 +2,7 @@ import * as React from 'react';
 import cn from 'classnames';
 import s from './Stepper.module.scss';
 
-interface StepperProps {
+export interface StepperProps {
   count: number;
   min?: number;
   max?: number;

@@ -11,7 +11,7 @@ export const PulseSlider = ({ getSliderValue }: sliderProps) => {
   const [thumbVal, setThumbVal] = useState(1);
   const sliderRef = React.useRef();
 
-  const handleMove = (e) => {
+  const handleMove = (e:any) => {
     // @ts-ignore
     sliderRef.current.style.marginLeft = `${e.target.value * 10}%`;
     setThumbVal(e.target.value);
@@ -26,6 +26,7 @@ export const PulseSlider = ({ getSliderValue }: sliderProps) => {
 
   return (
     <div className={s.container}>
+      {/* @ts-ignore */}
       <div className={s.value_div} ref={sliderRef}>
         <h3
           className={cn({

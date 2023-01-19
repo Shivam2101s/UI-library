@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'next/link'
 import { BreadCrumb } from '../../primitives/ProgressIndicatorTypes';
 import ChevronRight from '../icons/ChevronRight';
-import { getOriginByEnv } from '../../config/config';
 import s from './BreadCrumbs.module.scss';
 
 export function BreadCrumbs({ data }: { data: BreadCrumb[] }) {
@@ -21,7 +20,7 @@ export function BreadCrumbs({ data }: { data: BreadCrumb[] }) {
             </>
           ) : (
             <>
-              <a href={`${getOriginByEnv()}${item.url}`}>{item.name}</a>
+              <a href={`${item.url}`}>{item.name}</a>
               {index < data.length - 1 && (
                 <ChevronRight width={20} height={20} />
               )}

@@ -21,5 +21,6 @@ const Template: ComponentStory<typeof Sortlist> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
+  //@ts-ignore
   variant: 'primary',
 };

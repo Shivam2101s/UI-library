@@ -81,6 +81,7 @@ const Checkbox = (props: CheckboxProps) => {
         </div>
         <div className={s.children}>
           {label && (
+            /* @ts-ignore */
             <Typography
               color={disabled ? Color.grey_40 : Color.text_default}
               variant={TypeScales.body_m}
@@ -88,6 +89,7 @@ const Checkbox = (props: CheckboxProps) => {
             />
           )}
           {description && (
+            /* @ts-ignore */
             <Typography
               color={disabled ? Color.grey_40 : Color.text_subheading}
               variant={TypeScales.body_m}

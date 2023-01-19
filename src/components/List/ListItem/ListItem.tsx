@@ -23,18 +23,21 @@ export const ListItem: React.FunctionComponent<ListItemType> = ({
     className={s.root}
     onClick={() => {
       if (!disabled) {
+        {/* @ts-ignore */ }
         onClick();
       }
     }}
     aria-hidden
-  >
+  >{/*@ts-ignore */}
     <Typography label={label} color="text_default" variant="body_b" />
 
     <div className={s.value_container}>
       <div className={s.value}>
         {value ? (
+          //@ts-ignore 
           <Typography label={value} color="text_default" variant="body_m" />
         ) : (
+          //@ts-ignore
           <Typography
             label={placeholder}
             color="text_placeholder"

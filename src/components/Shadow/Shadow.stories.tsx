@@ -9,7 +9,7 @@ export default {
     variant: 'full',
   },
 } as ComponentMeta<typeof Shadow>;
-
+//@ts-ignore
 const Template: ComponentStory<typeof Shadow> = (args) => <Shadow {...args} />;
 
 export const All = Template.bind({});

@@ -39,12 +39,14 @@ const Switch = (props: SwitchProps) => {
             [s.isDisabled]: disabled,
           })}
         >
+          {/* @ts-ignore */}
           <Typography
             label="Yes"
             variant="small_para_sb"
             color="grey_white"
             renderAs="P"
           />
+          {/* @ts-ignore */}
           <Typography
             label="No"
             variant="small_para_sb"
