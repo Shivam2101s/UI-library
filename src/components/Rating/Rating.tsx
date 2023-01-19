@@ -36,7 +36,6 @@ const Rating: React.FunctionComponent<RatingType> = ({
       }}
     >
       <div className={s.title}>
-      {/* @ts-ignore */}
         <Typography
           label={title}
           variant={TypeScales.h4}
@@ -50,8 +49,7 @@ const Rating: React.FunctionComponent<RatingType> = ({
           <span>{averageRating}</span>
         </div>
         <div className={s.desc}>
-          {/* @ts-ignore */}
-          <Typography
+              <Typography
             label={`Based on ${totalRating} customer reviews`}
             variant={TypeScales.small_m}
             color={Color.text_subheading}

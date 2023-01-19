@@ -21,7 +21,6 @@ const NotInternetComponent = ({
         alt="internet-icon"
       />
       <div className={s.heading}>
-        {/* @ts-ignore */}
         <Typography
           label="Whoops!"
           color={Color.text_default}
@@ -29,7 +28,6 @@ const NotInternetComponent = ({
         />
       </div>
       <div className={s.subHeading}>
-        {/* @ts-ignore */}
         <Typography
           label="Slow or no internet connection"
           color={Color.text_subheading}

@@ -9,7 +9,6 @@ function TickLinear({
   height = 24,
 }: IconTypes) {
   const primaryColorValue = ColorsPallete[primaryColor];
-  {/* @ts-ignore */}
   return {
     linear: (
       <svg
@@ -26,6 +25,27 @@ function TickLinear({
       </svg>
     ),
     bulk: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width={width}
+        height={height}
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          cx="12"
+          cy="12"
+          r="9.25"
+          stroke={primaryColorValue}
+          strokeWidth="1.5"
+        />
+        <path
+          fill={primaryColorValue}
+          d="M8.578 11.523a.75.75 0 10-1.156.955l1.156-.955zm1.9 3.478l-.578.477a.75.75 0 001.13.03l-.552-.507zm6.074-5.493a.75.75 0 10-1.104-1.016l1.104 1.016zm-9.13 2.97l2.478 3 1.157-.955-2.479-3-1.156.955zm3.608 3.03l5.522-6-1.104-1.016-5.521 6 1.103 1.016z"
+        />
+      </svg>
+    ),
+    twoTone: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width={width}

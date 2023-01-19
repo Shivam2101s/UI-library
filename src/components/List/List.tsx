@@ -16,7 +16,6 @@ export const List: React.FunctionComponent<ListProps> = ({
 }) => (
   <div className={s.root}>
     <div className={s.heading}>
-      {/* @ts-ignore */}
       <Typography label={heading} color="text_label" variant="small_sb" />
     </div>
 

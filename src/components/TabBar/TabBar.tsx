@@ -31,8 +31,6 @@ export function TabBar(props: TabBarProps) {
           })}
           key={e}
         >
-          {/* @ts-ignore */}
-
           <Typography
             label={e}
             variant={TypeScales.body_sb}

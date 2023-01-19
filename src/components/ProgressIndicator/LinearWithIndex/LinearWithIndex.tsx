@@ -36,7 +36,6 @@ export const LinearWithIndex = ({
                 key={item?.key}
               >
                 {currentStep > idx ? (
-                  //@ts-ignore 
                   <TickLinear
                     variant="linear"
                     primaryColor={Color.grey_white}
@@ -56,7 +55,6 @@ export const LinearWithIndex = ({
       {steps?.length &&
         steps?.map((item) => (
           <div key={item?.label}>
-            {/* @ts-ignore */}
             <Typography
               renderAs="P"
               label={item?.label}

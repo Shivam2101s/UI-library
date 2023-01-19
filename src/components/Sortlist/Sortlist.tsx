@@ -5,7 +5,7 @@ import s from './Sortlist.module.scss';
 import Cross from '../icons/Cross';
 import Settings from '../icons/Settings';
 
-type props = {
+export type props = {
   labels: { text: string; value: string }[];
   selectedLabel: string;
   changeSelectedLabel: ({
@@ -15,6 +15,7 @@ type props = {
     text: string;
     value: string;
   }) => void;
+  variant?: string;
 };
 
 export const Sortlist = (props: props) => {
@@ -24,7 +25,6 @@ export const Sortlist = (props: props) => {
       <div className={s.sort_display}>
         <Settings />
         &nbsp;
-        {/* @ts-ignore */}
         <Typography
           renderAs="SPAN"
           label="Sort by"
@@ -45,7 +45,6 @@ export const Sortlist = (props: props) => {
             }}
             aria-hidden
           >
-            {/* @ts-ignore */}
             <Typography
               label={label.text}
               variant="small_sb"

@@ -19,7 +19,6 @@ export const Faq = ({ heading = "FAQ's", faqs, isOpen = true }: FaqType) => {
   return (
     <div className={s.root}>
       <div className={s.top} onClick={() => setFaqOpen((state) => !state)}>
-        {/* @ts-ignore */}
         <Typography
           renderAs="H3"
           variant="h3"
@@ -46,7 +45,6 @@ export const Faq = ({ heading = "FAQ's", faqs, isOpen = true }: FaqType) => {
                   })}
                   onClick={() => handleActiveFaq(idx)}
                 >
-                        {/* @ts-ignore */}
                   <Typography
                     renderAs="P"
                     variant="body_sb"

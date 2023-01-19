@@ -146,7 +146,6 @@ export function MultiRangeSlider({
             }
           >
             {minMaxVisible && ( //for minMax visible
-            //@ts-ignore
               <Typography
                 label={handleLabel(min)}
                 variant="body_para_b"
@@ -169,7 +168,6 @@ export function MultiRangeSlider({
             }
           >
             {minMaxVisible && ( //for minMax visible
-            //@ts-ignore
               <Typography
                 label={handleLabel(max)}
                 variant="body_para_b"
@@ -193,7 +191,6 @@ export function MultiRangeSlider({
         </div>
         <div className={s.static_value}>
           <div className={s.left_value}>
-            {/* @ts-ignore */}
             <Typography
               label={handleLabel(start)}
               variant="body_para_m"
@@ -203,7 +200,6 @@ export function MultiRangeSlider({
             />
           </div>
           <div className={s.right_value}>
-            {/* @ts-ignore */}
             <Typography
               label={handleLabel(stop)}
               variant="body_para_m"

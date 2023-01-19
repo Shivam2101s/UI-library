@@ -19,6 +19,5 @@ const Template: ComponentStory<typeof Spinner> = (args:any) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  //@ts-ignore
-  variant: 'primary',
+  variant: 'default',
 };

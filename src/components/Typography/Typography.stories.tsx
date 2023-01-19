@@ -9,13 +9,10 @@ export default {
   component: Typography,
   args: {
     label: 'A quick brown fox jumped over a lazy dog 1lI',
-  },  //@ts-ignore
-
+  },  
 } as ComponentMeta<typeof Typography>;
-//@ts-ignore
 
-const Template: ComponentStory<typeof Typography> = (args) => (
-  //@ts-ignore
+const Template: ComponentStory<typeof Typography> = (args:any) => (
   <Typography {...args} />
 );
 

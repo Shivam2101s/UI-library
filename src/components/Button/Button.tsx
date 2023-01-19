@@ -99,7 +99,6 @@ export const Button = (props: ButtonProps) => {
           {leftIcon && <div className={s.leftIcon}>{leftIcon}</div>}
 
           {label && (
-            /* @ts-ignore */
             <Typography
               label={`${label}`}
               variant="body_para_sb"

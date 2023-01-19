@@ -42,14 +42,12 @@ export const Alert = ({
         )}
       </div>
       <div className={s.center}>
-        {/* @ts-ignore */}
         <Typography
           renderAs="H3"
           color="text_default"
           label={heading}
           variant="body_para_sb"
         />
-        {/* @ts-ignore */}
         <Typography renderAs="H4" label={subheading} variant="small_m" />
       </div>
       <div className={s.right}>

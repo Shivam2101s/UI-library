@@ -1,4 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from 'react';
 
 import ContentHeader from '.';
 
@@ -12,7 +13,6 @@ export default {
 } as ComponentMeta<typeof ContentHeader>;
 
 const Template: ComponentStory<typeof ContentHeader> = (args:any) => (
-  //@ts-ignore
   <ContentHeader {...args} />
 );
 

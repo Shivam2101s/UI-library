@@ -61,7 +61,6 @@ export const Pagination = ({
       />
     </button>
     <div className={s.text}>
-      {/* @ts-ignore */}
       <Typography
         label={`${activePage} of ${totalPages}`}
         variant="body_sb"

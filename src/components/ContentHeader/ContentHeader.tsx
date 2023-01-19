@@ -12,13 +12,11 @@ export function ContentHeader(props: ContentHeaderPropTypes) {
 
   return (
     <div className={s.root}>
-      {/* @ts-ignore */}
       <Typography
         variant={TypeScales.h2}
         color={Color.grey_black}
         label={title}
       />
-      {/* @ts-ignore */}
       <Typography
         variant={TypeScales.body_para_m}
         color={Color.grey_70}
