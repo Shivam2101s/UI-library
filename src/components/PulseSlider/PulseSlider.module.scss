@@ -1,0 +1,81 @@
+@import 'src/config/theme/fonts';
+@import 'src/styles/colors';
+@import 'src/styles/common';
+
+.container {
+  position: relative;
+
+  & > .input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    outline: none;
+    border-radius: 3px;
+    margin-top: -52px;
+
+    .input:focus {
+      -webkit-appearance: none;
+      appearance: none;
+      background-color: red;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -webkit-border-image: none;
+      box-shadow: none;
+      appearance: none;
+      width: 24px;
+      height: 60px;
+      cursor: pointer;
+      // z-index: 15;
+      position: relative;
+      background: url('https://d1wsfdvq5y3rer.cloudfront.net/production/team/public/FS_20230118120207020039.png');
+      background-color: #ffffff;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 35px;
+      margin-left: 14px;
+      margin-top: -29px;
+      // border-radius: 20px;
+    }
+  }
+  .slider {
+    background-color: #ffffff;
+    margin-top: -12px;
+    z-index: 10000;
+  }
+
+  .thumb {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    background-color: #ffffff;
+  }
+
+  .value_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .value_red {
+      margin-left: -0.7rem;
+      margin-bottom: 20px;
+      color: $negative_text;
+    }
+
+    .value_yellow {
+      margin-left: -0.7rem;
+      margin-bottom: 20px;
+      color: $warning_text;
+    }
+
+    .value_green {
+      margin-left: -0.7rem;
+      margin-bottom: 20px;
+      color: $positive_60;
+    }
+  }
+}

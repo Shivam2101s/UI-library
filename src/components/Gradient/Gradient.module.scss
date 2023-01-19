@@ -1,0 +1,139 @@
+@import 'src/styles/colors';
+@import 'src/styles/gradients';
+@import 'src/styles/common';
+
+.root {
+  display: grid;
+  grid-template-columns: 170px 170px 170px 170px 170px;
+  grid-gap: 20px 20px;
+
+  div {
+    width: 170px;
+    height: 170px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  div:nth-child(1) {
+    @include gradientLightMango;
+  }
+
+  div:nth-child(2) {
+    @include gradientLightSun;
+  }
+
+  div:nth-child(3) {
+    @include gradientLightLeaf;
+  }
+
+  div:nth-child(4) {
+    @include gradientLightTrust;
+  }
+
+  div:nth-child(5) {
+    @include gradientLightHolo;
+  }
+
+  div:nth-child(6) {
+    @include gradientLightSunrise;
+  }
+
+  div:nth-child(7) {
+    @include gradientLightMorph;
+  }
+
+  div:nth-child(8) {
+    @include gradientLightEmerald;
+  }
+
+  div:nth-child(9) {
+    @include gradientPastelPlum;
+  }
+
+  div:nth-child(10) {
+    @include gradientPastelDesert;
+  }
+
+  div:nth-child(11) {
+    @include gradientPastelLeaf;
+  }
+
+  div:nth-child(12) {
+    @include gradientPastelOcean;
+  }
+
+  div:nth-child(13) {
+    @include gradientPastelSunset;
+  }
+
+  div:nth-child(14) {
+    @include gradientPastelDusk;
+  }
+
+  div:nth-child(15) {
+    @include gradientPastelMorph;
+  }
+
+  div:nth-child(16) {
+    @include gradientPastelEmerald;
+  }
+
+  div:nth-child(17) {
+    @include gradientPlum;
+  }
+
+  div:nth-child(18) {
+    @include gradientGlacier;
+  }
+
+  div:nth-child(19) {
+    @include gradientSilk;
+  }
+
+  div:nth-child(20) {
+    @include gradientSoftPink;
+  }
+
+  div:nth-child(21) {
+    @include gradientSoftVoilet;
+  }
+
+  div:nth-child(22) {
+    @include gradientIce;
+  }
+
+  div:nth-child(23) {
+    @include gradientDeepOrange;
+  }
+
+  div:nth-child(24) {
+    @include gradientSunrise;
+  }
+
+  div:nth-child(25) {
+    @include gradientLeaf;
+  }
+
+  div:nth-child(26) {
+    @include gradientOcean;
+  }
+
+  div:nth-child(27) {
+    @include gradientSunset;
+  }
+
+  div:nth-child(28) {
+    @include gradientPinkSky;
+  }
+
+  div:nth-child(29) {
+    @include gradientLuxury;
+  }
+
+  div:nth-child(30) {
+    @include gradientEmerald;
+  }
+}

@@ -7,7 +7,6 @@ import {
   ButtonVariants,
   ButtonVariantsType,
   ColorType,
-  FontVariantType,
 } from '../../primitives';
 import { ButtonSizes } from '../../primitives/ButtonTypes';
 import Spinner from '../Spinner';
@@ -93,14 +92,15 @@ export const Button = (props: ButtonProps) => {
       }}
       {...propsToFwd}
       disabled={isDisabled}
-      onClick={isLoading ? ()=>{} : onClick}
+      onClick={isLoading ? () => { } : onClick}
     >
       {!isLoading && (
         <>
           {leftIcon && <div className={s.leftIcon}>{leftIcon}</div>}
+
           {label && (
             <Typography
-              label={label}
+              label={`${label}`}
               variant="body_para_sb"
               renderAs="SPAN"
               color={textColor}

@@ -49,5 +49,4 @@ export enum TypographyHtmlTags {
   H5 = 'H5',
   H6 = 'H6',
   SPAN = 'SPAN',
-  Div = 'Div',
 }

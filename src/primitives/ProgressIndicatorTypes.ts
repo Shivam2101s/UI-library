@@ -13,12 +13,14 @@ export type ProgressIndicatorType = {
     | 'progressDots'
     | 'linearWithIndex';
   steps?: StepType[];
+  color?: string;
   horizontalMargin?: number;
 };
 
 export type IndicatorType = {
   noOfSteps: number;
   currentStep: number;
+  color?: string;
   steps?: StepType[];
   horizontalMargin?: number;
 };

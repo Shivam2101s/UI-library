@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconTypes } from '../../primitives';
+import { IconTypes } from '../../primitives/IconTypes';
 import { Color, ColorsPallete } from '../../primitives';
 
 function TickLinear({

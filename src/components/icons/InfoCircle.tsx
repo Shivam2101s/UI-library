@@ -1,5 +1,5 @@
 import React from 'react';
-import { IconTypes } from '../../primitives';
+import { IconTypes } from '../../primitives/IconTypes';
 import { ColorsPallete, Color } from '../../primitives';
 
 function InfoCircle({

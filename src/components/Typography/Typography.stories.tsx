@@ -9,10 +9,10 @@ export default {
   component: Typography,
   args: {
     label: 'A quick brown fox jumped over a lazy dog 1lI',
-  },
+  },  
 } as ComponentMeta<typeof Typography>;
 
-const Template: ComponentStory<typeof Typography> = (args) => (
+const Template: ComponentStory<typeof Typography> = (args:any) => (
   <Typography {...args} />
 );
 

@@ -1,0 +1,70 @@
+@import 'src/styles/colors';
+@import 'src/styles/common';
+
+.label {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: transform 0.15s ease;
+  user-select: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
+  /* Hide the browser's default checkbox */
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark_wrapper {
+    display: flex;
+    align-items: center;
+
+    .checkmark {
+      margin: 6px;
+      box-sizing: border-box;
+      height: 20px;
+      width: 20px;
+      transition: all 0.15s ease;
+      cursor: pointer;
+      border: 1.5px solid $grey-30;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      -webkit-flex-shrink: 0;
+      &:active {
+        border-color: $grey-40;
+      }
+    }
+
+    &:active .checkmark {
+      border-color: $grey-40;
+    }
+
+    svg {
+      opacity: 0;
+    }
+
+    .children {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hasChildren {
+      margin-right: 8px;
+    }
+
+    .tickSvg {
+      transition: opacity 0.15s ease;
+      opacity: 1;
+    }
+  }
+}

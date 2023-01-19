@@ -1,0 +1,20 @@
+@import 'src/styles/colors';
+@import 'src/config/theme/fonts';
+@import 'src/styles/common';
+
+.header {
+  display: flex;
+  width: 100%;
+  & > button {
+    padding: 12px;
+    flex-grow: 1;
+    color: $grey-40;
+    font-size: 15px;
+    font-family: $gilroy-semi-bold-font;
+    border-bottom: 2px solid $grey-40;
+  }
+  .active {
+    border-bottom: 2px solid $interaction-buttons;
+    color: $interaction-100;
+  }
+}

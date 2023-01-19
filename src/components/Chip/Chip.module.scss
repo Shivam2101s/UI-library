@@ -1,0 +1,64 @@
+@import 'src/config/theme/fonts';
+@import 'src/styles/colors';
+@import 'src/styles/common';
+
+.chip {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 8px;
+  height: 36px;
+  padding: 8px;
+
+  .icon {
+    margin-right: 8px;
+  }
+}
+
+.Filled {
+  color: $grey-50;
+  background-color: $grey-10;
+  &.enabled {
+    color: $grey-50;
+    background-color: $grey-10;
+  }
+  &.disabled {
+    background-color: $grey-10;
+    color: $grey-30;
+  }
+  &.selected {
+    background-color: $grey-black;
+    color: $grey-white;
+  }
+  &:hover {
+    background-color: $grey-black;
+    color: $grey-white;
+  }
+}
+
+.Outline {
+  color: $grey-50;
+  background-color: $grey-white;
+  border: 1px solid $grey-50;
+  &.enabled {
+    color: $grey-50;
+    background-color: $grey-white;
+    border: 1px solid $grey-50;
+  }
+  &.disabled {
+    background-color: $grey-10;
+    color: $grey-40;
+    border-color: $grey-30;
+  }
+  &.selected {
+    background-color: $grey-white;
+    color: $interaction-buttons;
+    border-color: $interaction-buttons;
+  }
+  // &:hover {
+  //   background-color: $grey-white;
+  //   color: $interaction-buttons;
+  //   border-color: $interaction-buttons;
+  // }
+}

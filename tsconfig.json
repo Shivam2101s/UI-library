@@ -33,9 +33,11 @@
   },
   "include": [
     "custom.d.ts",
+    "next-env.d.ts",
     "scss.d.ts",
     "**/*.ts",
-    "**/*.tsx","src"
+    "**/*.tsx",
+    "src"
   ],
   "exclude": ["node_modules", "dist", "example", "rollup.config.js"]
 }

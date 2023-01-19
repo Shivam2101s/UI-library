@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Button } from './Button';
 import ChevronRight from '../icons/ChevronRight';
 import ChevronLeft from '../icons/ChevronLeft';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {
   title: 'Atoms/Button',
