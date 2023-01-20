@@ -2,11 +2,11 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
-import postcss from 'rollup-plugin-postcss';
-import peerDepsExternal from 'rollup-plugin-peer-deps-external'
-
+import postcss from "rollup-plugin-postcss";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 
 const packageJson = require("./package.json");
+const extensions = [".js", ".jsx", ".ts", ".tsx", ".mdx"];
 
 export default [
   {
@@ -16,16 +16,18 @@ export default [
         file: packageJson.main,
         format: "cjs",
         sourcemap: true,
+        preserveModulesRoot: "src",
       },
       {
         file: packageJson.module,
         format: "esm",
         sourcemap: true,
+        preserveModulesRoot: "src",
       },
     ],
     plugins: [
       peerDepsExternal(),
-      resolve(),
+      resolve({ extensions }),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss(),
@@ -35,7 +37,6 @@ export default [
     input: "dist/esm/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
-    external: [/\.scss$/]
-
+    external: [/\.scss$/],
   },
 ];
