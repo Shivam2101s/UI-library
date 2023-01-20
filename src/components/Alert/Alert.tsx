@@ -38,7 +38,7 @@ export const Alert = ({
     <div className={s.top}>
       <div className={s.left}>
         {leftIcon || (
-          <img src={`/img/DS/alerts/${variant}.gif`} alt={variant} />
+          <img src={`../../img/DS/alerts/${variant}.gif`} alt={variant} />
         )}
       </div>
       <div className={s.center}>
