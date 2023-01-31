@@ -7,6 +7,7 @@ import Button from "../Button";
 import s from "./Alert.module.scss";
 import Typography from "../Typography";
 
+
 type AlertType = {
   heading: string;
   subheading: string;
@@ -27,7 +28,17 @@ export const Alert = ({
   variant = "upcoming",
   onProceed,
   children,
-}: AlertType) => (
+}: AlertType) => {
+  const getGifUrl = () => {
+  if(variant === "upcoming"){
+    return 'https://d1wsfdvq5y3rer.cloudfront.net/production/team/public/FS_20230120164041457769.gif'
+  }else if(variant === "critical"){
+    return 'https://d1wsfdvq5y3rer.cloudfront.net/production/team/public/FS_20230120164056640751.gif'
+  }else {
+    return 'https://d1wsfdvq5y3rer.cloudfront.net/production/team/public/FS_20230120164111246374.gif'
+  }
+  }
+  return(
   <div
     className={cn(s.root, {
       [s.critical]: variant === "critical",
@@ -38,7 +49,7 @@ export const Alert = ({
     <div className={s.top}>
       <div className={s.left}>
         {leftIcon || (
-          <img src={`../../img/DS/alerts/${variant}.gif`} alt={variant} />
+          <img src={`${getGifUrl()}`} alt={variant} />
         )}
       </div>
       <div className={s.center}>
@@ -79,4 +90,4 @@ export const Alert = ({
     </div>
     {children}
   </div>
-);
+)};

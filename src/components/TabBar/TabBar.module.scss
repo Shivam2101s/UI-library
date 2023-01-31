@@ -1,11 +1,12 @@
-@import 'src/styles/colors';
-@import 'src/config/theme/fonts';
-@import 'src/styles/common';
+@import "src/styles/colors";
+@import "src/config/theme/fonts";
+@import "src/styles/common";
 
 .header {
   display: flex;
   width: 100%;
   & > button {
+    background: none;
     padding: 12px;
     flex-grow: 1;
     color: $grey-40;
